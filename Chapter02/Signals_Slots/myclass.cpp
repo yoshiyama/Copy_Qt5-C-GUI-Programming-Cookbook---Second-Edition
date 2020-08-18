@@ -6,5 +6,9 @@ MyClass::MyClass(QObject *parent) : QObject(parent)
 
 void MyClass::doSomething()
 {
-    QMessageBox::information(nullptr, "Hello", "Button has been clicked!");
+    QProcess *process = new QProcess(this);
+    QString file = "explorer";
+    QStringList arguments {" ."};
+//    QMessageBox::information(nullptr, "Hello", "Button has been clicked!");
+    process->start(file,arguments);
 }

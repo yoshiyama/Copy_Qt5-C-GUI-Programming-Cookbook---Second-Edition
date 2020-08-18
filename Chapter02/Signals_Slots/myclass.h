@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QMainWindow>
 #include <QMessageBox>
+#include <QProcess>
 
 class MyClass : public QObject
 {
