@@ -7,15 +7,14 @@
 
 class MyClass : public QObject
 {
-    Q_OBJECT
+	Q_OBJECT
 public:
-    explicit MyClass(QObject *parent = nullptr);
+	explicit MyClass(QObject *parent = nullptr);
 
 signals:
-    void doNow();
-public slots:
-    void doSomething();
 
+public slots:
+	void doSomething();
 };
 
 #endif // MYCLASS_H
