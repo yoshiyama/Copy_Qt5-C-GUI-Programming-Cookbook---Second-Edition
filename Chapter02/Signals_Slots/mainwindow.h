@@ -6,8 +6,8 @@
 namespace Ui {
 class MainWindow;
 }
-
-class MainWindow : public QMainWindow
+//Inheritance
+class MainWindow : public QMainWindow//基本クラスはQMainWindow
 {
 	Q_OBJECT
 
